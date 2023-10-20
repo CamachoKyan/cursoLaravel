@@ -19,4 +19,6 @@ class bienvenidoController extends Controller
         return view('bienvenido', compact('nombre', 'alumnos', 'datos'));
         
     }
+
+    
 }

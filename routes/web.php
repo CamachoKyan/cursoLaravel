@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\bienvenidoController;
+use App\Http\Controllers\AlumnoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,8 @@ Route::get('/', function () {
 
 route::get('/bienvenido',[bienvenidoController::class,'bienvenido']);
 
-route::get('/alumnos',[bienvenidoController::class,'bienvenido']);
+route::get('/inicio',[AlumnoController::class,'inicio']);
+
+route::get('/alumno',[AlumnoController::class,'alumnos']);
+
+
